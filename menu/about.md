@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-<img style="float:right;width:30%;padding-left:20px;padding-bottom:20px" alt="" src="/images/portrait.jpg"/>
+<img style="float:right;width:30%;padding-left:20px;padding-bottom:20px" alt="" src="/images/profile_pic.jpeg"/>
 
 I'm a fast-learning software engineer with a strong foundation in front-end development using **Vue/Nuxt.js**, **React/Next.js**, and back-end expertise in **Node.js** and **Ruby on Rails**.
 
