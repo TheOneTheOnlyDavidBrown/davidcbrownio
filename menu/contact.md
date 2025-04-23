@@ -8,7 +8,7 @@ If you want to contact me, fill out the form below. Or you can find me through t
 <form method="POST" action="https://formspree.io/me@davidcbrown.io">
     <input type="text" name="name" placeholder="Your name">
     <input type="email" name="_replyto" placeholder="Your email">
-    <textarea name="message" placeholder="Enter your message here"></textarea>
+    <textarea name="message" placeholder="Enter your message here" style="font-family:arial"></textarea>
     <button type="submit">Send Message</button>
 </form>
 
