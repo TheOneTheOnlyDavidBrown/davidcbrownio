@@ -1,8 +1,7 @@
 <nav class="menu">
   <div class="menu-content">
     {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url %}{% assign current = 'current' %}{% endif %}
-    <a class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}" href="{{ site.url }}/menu{{ link.url }}">{{ link.title }}</a>
-    {% endfor %}
+<a class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}" href="{% if link.url contains 'http' %}{{ link.url }}{% else %}{{ site.url }}/menu{{ link.url }}{% endif %}">{{ link.title }}</a>    {% endfor %}
   </div>
   <div class="social-icons">
     {% if site.author.github %}
