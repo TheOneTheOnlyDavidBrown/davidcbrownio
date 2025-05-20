@@ -22,6 +22,9 @@ navigation:
   url: /open-source-contributions
 - title: Contact
   url: /contact
+- title: Hire me
+  url: https://tolvasoft.com
+
 
 paginate:            5
 disqus:              "davidcbrown-io"
