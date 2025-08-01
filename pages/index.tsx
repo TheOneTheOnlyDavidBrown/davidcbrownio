@@ -8,9 +8,14 @@ export default function Home() {
         <meta name="description" content="Welcome to the personal site of David C Brown." />
         <link rel="canonical" href="https://davidcbrown.io/" />
       </Head>
-      <main className="h-screen flex flex-col items-center justify-center">
+      <main className="flex flex-1 flex-col items-center justify-center ">
         <h1 className="text-4xl font-bold mb-2 text-primary">David C Brown</h1>
-        <div className="text-lg text-primary font-medium mb-6">Fractional CTO & Senior Software Engineer</div>
+        <div className="text-lg text-primary font-medium mb-6">
+          Fractional CTO, Senior Software Engineer & Tech Lead
+        </div>
+        <div className="text-lg text-dark text-center max-w-xl mb-4">
+          Senior Software Engineer&nbsp;|&nbsp;Technical Leadership for Growing Companies&nbsp;|&nbsp;Strategic technologist aligning product, engineering &amp; business growth
+        </div>
         <p className="text-lg mb-8 text-dark text-center max-w-xl">
           With over <span className="font-semibold text-highlight">25,000+ hours</span> of engineering experience, I’ve helped launch <span className="font-semibold text-primary">6 products</span> from idea to production and contributed to <span className="font-semibold text-primary">7 startups</span> at every stage.
           <span className="block mt-4">

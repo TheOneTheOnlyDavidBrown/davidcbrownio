@@ -4,12 +4,11 @@ import Navbar from '../components/Navbar'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-neutral h-screen overflow-y-auto" >
       <Navbar />
-      <div className='bg-neutral'>
-
+      <div className="m-4">
       <Component {...pageProps} />
       </div>
-    </>
+    </div>
   )
 }
