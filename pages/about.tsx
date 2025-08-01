@@ -9,6 +9,11 @@ export default function About() {
         <link rel="canonical" href="https://davidcbrown.io/about" />
       </Head>
       <main className="flex flex-1 flex-col items-center justify-center">
+        <img
+          src="/profile_pic.jpeg"
+          alt="David C Brown Profile"
+          className="w-32 h-32 rounded-full mb-6 shadow-lg object-cover"
+        />
         <h1 className="text-3xl font-bold mb-4 text-primary">About Me</h1>
         <div className="text-lg text-dark text-center max-w-2xl mb-6">
           <span className="font-semibold text-primary">Senior Software Engineer | Fractional CTO | Tech Lead</span>
