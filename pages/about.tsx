@@ -44,7 +44,7 @@ export default function About() {
           <ul className="list-disc list-inside mt-2">
             <li>Technology Strategy & Roadmapping | Team Scaling | Architecture Planning</li>
             <li>JavaScript | TypeScript | Ruby on Rails | Node.js | Next.js | tRPC</li>
-            <li>React | Vue | Angular | GraphQL | REST APIs | Financial Data Systems</li>
+            <li>React | Vue | Nuxt | Angular | GraphQL | REST APIs | Financial Data Systems</li>
             <li>Systems Design | Security Implementation | Compliance | Vendor Evaluation</li>
           </ul>
         </div>
