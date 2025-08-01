@@ -6,7 +6,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar />
+      <div className='bg-neutral'>
+
       <Component {...pageProps} />
+      </div>
     </>
   )
 }
