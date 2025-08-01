@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href="/about" className="hover:text-accent1 text-accent2">About</Link>
         {/* <Link href="/projects" className="hover:text-accent1 text-accent2">Projects</Link>
         <Link href="/musings" className="hover:text-accent1 text-accent2">Musings</Link> */}
-        <Link href="/contact" className="hover:text-highlight text-accent2 flex items-center gap-1">
+        <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-1">
           <Mail size={18} />
         </Link>
         <a href="https://linkedin.com/in/davidbrownucf" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1">
@@ -54,7 +54,7 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>About</Link>
           <Link href="/projects" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>Projects</Link>
           <Link href="/musings" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>Musings</Link>
-          <Link href="/contact" className="hover:text-highlight text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
+          <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
             <Mail size={18} />
             Contact
           </Link>
