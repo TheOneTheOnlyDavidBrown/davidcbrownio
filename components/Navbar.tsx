@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Github, Linkedin, Twitter, Mail, Menu } from 'lucide-react'
+import { Github, Linkedin, Twitter, Mail, Menu, Terminal } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Navbar() {
@@ -13,11 +13,11 @@ export default function Navbar() {
         </span>
       </div>
       {/* Desktop menu */}
-      <div className="space-x-4  items-center md:flex hidden">
+      <div className="space-x-4 flex items-center">
         <Link href="/" className="hover:text-accent1 text-accent2">Home</Link>
         <Link href="/about" className="hover:text-accent1 text-accent2">About</Link>
-        <Link href="/projects" className="hover:text-accent1 text-accent2">Projects</Link>
-        <Link href="/musings" className="hover:text-accent1 text-accent2">Musings</Link>
+        {/* <Link href="/projects" className="hover:text-accent1 text-accent2">Projects</Link>
+        <Link href="/musings" className="hover:text-accent1 text-accent2">Musings</Link> */}
         <Link href="/contact" className="hover:text-highlight text-accent2 flex items-center gap-1">
           <Mail size={18} />
         </Link>
@@ -29,6 +29,14 @@ export default function Navbar() {
         </a>
         <a href="https://github.com/theonetheonlydavidbrown" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1">
           <Github size={18} />
+        </a>
+        <a
+          href="https://tolvasoft.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-accent1 text-accent2 font-semibold flex items-center gap-1"
+        >
+          <Terminal size={18} />
         </a>
       </div>
       {/* Mobile menu button */}
@@ -61,6 +69,15 @@ export default function Navbar() {
           <a href="https://github.com/theonetheonlydavidbrown" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
             <Github size={18} />
             GitHub
+          </a>
+          <a
+            href="https://tolvasoft.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent1 text-accent2 font-semibold py-2 w-full"
+            onClick={() => setOpen(false)}
+          >
+            Tolva
           </a>
         </div>
       )}
