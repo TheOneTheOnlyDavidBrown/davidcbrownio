@@ -50,6 +50,7 @@ export default function Home() {
           </div>
 
         </div>
+        {/* Fractional CTO Summary */}
         {/* About Summary */}
         <div className="text-base text-dark max-w-2xl mb-6 text-center">
           I'm a growth-oriented Senior Software Engineer with <span className="font-semibold text-highlight">25,000+ hours</span> building and scaling web applications across <span className="font-semibold text-primary">7 startups</span> and <span className="font-semibold text-primary">6 products</span> from idea to production.<br />
@@ -60,6 +61,10 @@ export default function Home() {
           As a commercial multifamily real estate investor with mortgage note investing experience, I bring market perspective to complex technology challenges, particularly in regulated environments with sensitive financial data and transaction-heavy workflows.
         </div>
         <div>
+        <div className="text-base text-dark max-w-2xl mb-6 text-center">
+          I specialize in turning vision into scalable, production-ready technology. My expertise spans full-stack development, product strategy, and technical leadership.<br /><br />
+          Now, I’m repositioning my career as a <span className="text-highlight font-semibold">Fractional CTO</span> in the PropTech industry—leveraging deep experience in the investment side of commercial multifamily and mortgage notes. I help founders and teams accelerate product delivery, make critical technical decisions, and build high-performing engineering organizations.
+        </div>
 
         {/* Technical & Strategic Leadership */}
         <div className="text-base text-dark max-w-2xl mb-6 text-left">
