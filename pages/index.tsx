@@ -36,17 +36,17 @@ export default function Home() {
         </div>
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-accent2 rounded-lg shadow p-4 flex flex-col items-center">
-            <span className="text-2xl font-bold text-primary">25,000+</span>
-            <span className="text-dark text-sm">Engineering Hours</span>
+          <div className="bg-primary rounded-lg shadow p-4 flex flex-col items-center">
+            <span className="text-2xl font-bold text-accent2">25,000+</span>
+            <span className="text-accent1 text-sm">Engineering Hours</span>
           </div>
-          <div className="bg-accent2 rounded-lg shadow p-4 flex flex-col items-center">
-            <span className="text-2xl font-bold text-primary">6</span>
-            <span className="text-dark text-sm">Products Launched</span>
+          <div className="bg-primary rounded-lg shadow p-4 flex flex-col items-center">
+            <span className="text-2xl font-bold text-accent2">6</span>
+            <span className="text-accent1 text-sm">Products Launched</span>
           </div>
-          <div className="bg-accent2 rounded-lg shadow p-4 flex flex-col items-center">
-            <span className="text-2xl font-bold text-primary">7</span>
-            <span className="text-dark text-sm">Startups Impacted</span>
+          <div className="bg-primary rounded-lg shadow p-4 flex flex-col items-center">
+            <span className="text-2xl font-bold text-accent2">7</span>
+            <span className="text-accent1 text-sm">Startups Impacted</span>
           </div>
 
         </div>
