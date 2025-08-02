@@ -13,7 +13,7 @@ export default function Navbar() {
         </span>
       </div>
       {/* Desktop menu */}
-      <div className="space-x-4 flex items-center">
+      <div className="space-x-4  items-center md:flex hidden">
         <Link href="/" className="hover:text-accent1 text-accent2">Home</Link>
         <Link href="/about" className="hover:text-accent1 text-accent2">About</Link>
         {/* <Link href="/projects" className="hover:text-accent1 text-accent2">Projects</Link>
@@ -49,24 +49,31 @@ export default function Navbar() {
       </button>
       {/* Mobile menu dropdown */}
       {open && (
-        <div className="absolute top-full left-0 w-full bg-primary border-b border-accent2 flex flex-col items-start px-4 py-2 md:hidden">
-          <Link href="/" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/about" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/projects" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>Projects</Link>
-          <Link href="/musings" className="hover:text-accent1 text-accent2 py-2 w-full" onClick={() => setOpen(false)}>Musings</Link>
-          <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
+        <div className="fixed inset-0 bg-primary bg-opacity-95 z-50 flex flex-col items-start px-6 py-8 gap-4 md:hidden">
+          <button
+            className="absolute top-4 right-4 text-accent2"
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+          >
+            <Menu size={28} />
+          </button>
+          <Link href="/" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Home</Link>
+          <Link href="/about" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>About</Link>
+          <Link href="/projects" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Projects</Link>
+          <Link href="/musings" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Musings</Link>
+          <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-2 text-lg py-2 w-full" onClick={() => setOpen(false)}>
             <Mail size={18} />
             Contact
           </Link>
-          <a href="https://linkedin.com/in/davidbrownucf" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
+          <a href="https://linkedin.com/in/davidbrownucf" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-2 text-lg py-2 w-full" onClick={() => setOpen(false)}>
             <Linkedin size={18} />
             LinkedIn
           </a>
-          <a href="https://twitter.com/theonetheonlydb" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
+          <a href="https://twitter.com/theonetheonlydb" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-2 text-lg py-2 w-full" onClick={() => setOpen(false)}>
             <Twitter size={18} />
             X
           </a>
-          <a href="https://github.com/theonetheonlydavidbrown" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-1 py-2 w-full" onClick={() => setOpen(false)}>
+          <a href="https://github.com/theonetheonlydavidbrown" target="_blank" rel="noopener noreferrer" className="hover:text-accent1 text-accent2 flex items-center gap-2 text-lg py-2 w-full" onClick={() => setOpen(false)}>
             <Github size={18} />
             GitHub
           </a>
@@ -74,9 +81,10 @@ export default function Navbar() {
             href="https://tolvasoft.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent1 text-accent2 font-semibold py-2 w-full"
+            className="hover:text-accent1 text-accent2 font-semibold flex items-center gap-2 text-lg py-2 w-full"
             onClick={() => setOpen(false)}
           >
+            <Terminal size={18} />
             Tolva
           </a>
         </div>
