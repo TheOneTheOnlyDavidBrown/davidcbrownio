@@ -1,6 +1,10 @@
 import Head from 'next/head'
+import { useState } from 'react'
+import ContactForm from '../components/ContactForm'
 
 export default function Home() {
+  const [showContact, setShowContact] = useState(false)
+
   return (
     <>
       <Head>
@@ -122,6 +126,37 @@ export default function Home() {
           </a>
         </div>
       </main>
+      {/* Chat Bubble */}
+      <div
+        className="fixed bottom-6 right-6 z-50"
+        style={{ cursor: 'pointer' }}
+        onClick={() => setShowContact(true)}
+      >
+        <img
+          src="/profile_pic.jpeg"
+          alt="Chat with David"
+          className="w-14 h-14 rounded-full shadow-lg border-4 border-green-400 hover:scale-105 transition"
+        />
+      </div>
+      {/* Contact Popover */}
+      {showContact && (
+        <div className="fixed bottom-24 right-6 z-50 bg-white rounded-xl shadow-2xl border border-accent1 p-6 w-80 flex flex-col items-center">
+          <button
+            className="absolute top-2 right-2 text-lg text-gray-400 hover:text-gray-700"
+            onClick={() => setShowContact(false)}
+            aria-label="Close"
+          >
+            ×
+          </button>
+          <img
+            src="/profile_pic.jpeg"
+            alt="David C Brown"
+            className="w-16 h-16 rounded-full mb-2 shadow"
+          />
+          <h3 className="text-lg font-semibold mb-2 text-primary">Contact David</h3>
+          <ContactForm  />
+        </div>
+      )}
     </>
   )
 }
