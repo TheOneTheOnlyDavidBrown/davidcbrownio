@@ -15,7 +15,6 @@ export default function Navbar() {
       {/* Desktop menu */}
       <div className="space-x-4  items-center md:flex hidden">
         <Link href="/" className="hover:text-accent1 text-accent2">Home</Link>
-        <Link href="/about" className="hover:text-accent1 text-accent2">About</Link>
         {/* <Link href="/projects" className="hover:text-accent1 text-accent2">Projects</Link>
         <Link href="/musings" className="hover:text-accent1 text-accent2">Musings</Link> */}
         <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-1">
@@ -58,9 +57,8 @@ export default function Navbar() {
             <Menu size={28} />
           </button>
           <Link href="/" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/about" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/projects" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Projects</Link>
-          <Link href="/musings" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Musings</Link>
+          {/* <Link href="/projects" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Projects</Link>
+          <Link href="/musings" className="hover:text-accent1 text-accent2 text-lg py-2 w-full" onClick={() => setOpen(false)}>Musings</Link> */}
           <Link href="/contact" className="hover:text-accent1 text-accent2 flex items-center gap-2 text-lg py-2 w-full" onClick={() => setOpen(false)}>
             <Mail size={18} />
             Contact
